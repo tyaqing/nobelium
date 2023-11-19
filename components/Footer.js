@@ -1,5 +1,5 @@
 import { useConfig } from '@/lib/config'
-import Vercel from '@/components/Vercel'
+// import Vercel from '@/components/Vercel'
 const Footer = ({ fullWidth }) => {
   const BLOG = useConfig()
 
@@ -18,7 +18,8 @@ const Footer = ({ fullWidth }) => {
           <p>
             © {BLOG.author} {from === y || !from ? y : `${from} - ${y}`}
           </p>
-          <Vercel />
+          <a rel={'noreferrer'} href="https://beian.miit.gov.cn" target={'_blank'}> 湘ICP备2022006032号-1</a>
+          {/*<Vercel />*/}
         </div>
       </div>
     </div>
